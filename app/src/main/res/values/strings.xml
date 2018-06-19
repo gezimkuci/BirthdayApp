@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BirthdayApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="zgjedhni_menyren_e_regjistrimit">Zgjedhni menyren e regjistrimit</string>
+    <string name="manualisht">Manualisht</string>
+    <string name="merrini_nga_kontaktet">Merrini nga kontaktet</string>
+    <string name="zgjedh_menyren">Zgjedh menyren:</string>
+    <string name="forma_per_regjistrimin_e_ditelindjeve">Forma per regjistrimin e ditelindjeve</string>
+    <string-array name="spinnerItems">
+        <item>Dergo SMS</item>
+        <item>Vetem me njofto</item>
+    </string-array>
+</resources>
