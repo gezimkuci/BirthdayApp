@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zgjedhni_menyren_e_regjistrimit"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_weight="2"
+        android:gravity="center"
+       />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manualisht"
+        android:layout_weight="1"
+        android:id="@+id/btnManualisht"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/merrini_nga_kontaktet"
+        android:layout_weight="1"
+        android:id="@+id/btnKontaktet"/>
+</LinearLayout>

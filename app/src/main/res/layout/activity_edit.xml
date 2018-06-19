@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gezim.birthdayapp.Register"
+    android:padding="20dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/birthdaylogo"
+        android:padding="5dp"
+        android:id="@+id/imgBirthday"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDescription"
+        android:text="Editimi i te dhenave"
+        android:layout_below="@id/imgBirthday"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtDescription"
+        android:id="@+id/horizontalLine"
+        android:background="#d3d3d3"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalLine"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zgjedh_menyren"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerItems"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalLine"
+        android:layout_marginTop="61dp"
+        android:drawableLeft="@drawable/usericon"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignStart="@+id/etName"
+        android:layout_below="@id/etName"
+        android:drawableLeft="@drawable/numbericon"
+        android:hint="Phone number"
+        android:paddingLeft="5dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/etBirthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNumber"
+        android:layout_alignStart="@+id/etNumber"
+        android:layout_below="@+id/etNumber"
+        android:drawableLeft="@drawable/birthdateicon"
+        android:hint="Birth date"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/etsms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBirthdate"
+        android:drawableLeft="@drawable/smsicon"
+        android:hint="Shkruani mesazhin e deshiruar..."
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etsms"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingTop="7dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/spinnerItems"
+            android:text="Save"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
